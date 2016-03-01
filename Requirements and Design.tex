@@ -89,9 +89,66 @@
 	Client has not provided any architecture constraints.
 	
 	\section{Functional Requirements and Application Design}
+	\subsection{Use Case Prioritization}
+	\subsubsection{Report Subsystem}
+		% Add critical use cases here %
+	\textbf{Important:}
+	\begin{itemize}
+		% Add important use cases here %
+		\item Report Subsystem
+	\end{itemize}
+		% Add nice-to-have use cases here %
+
+	\subsubsection{Research Group Subsystem}
+	
+	  \begin{itemize}
+	  \item Delete research group: Important 
+	  \item Add research group: Important
+	  \item View research group: Important
+	  \item Add researcher: Important
+	  \item Update research group: Important
+	\end{itemize}
+	
+		
+
+	\subsection{Use Case/Service Contracts}
+	% Add each use case here as a subsubsection %
+	\subsubsection{Report Subsystem}
+	\textbf{Pre-Conditions:}
+	\begin{itemize}
+		\item User must be logged in to be able to generate a report.
+	\end{itemize}
+	\textbf{Post-Conditions:}
+	\begin{itemize}
+		\item A simple but comprehensive report must be generated in the format chosen by the user.
+		\item The report must only include papers that the current user is associated with.
+	\end{itemize}
+	
+	\subsubsection{Research Group Subsystem}
+	\textbf{Pre-Conditions:}
+	\begin{itemize}
+	  \item Delete research group - A research group must exist on the report system database before it can be deleted.
+	  \item Add research group - No duplicate research group should exist on the system database. 
+	  \item View research group - Admin or Research group leader must be logged on to the  report system before  viewing  each of the research groups.
+	  \item Add researcher - No identical researcher should exist on the report system database.
+	 \item Update research group - The research group must exist on the report system database before it can be 	updated and this should only be performed by the admin or the research group leader.
+	\end{itemize}
+	\textbf{Post-Conditions:}
+	
+	\begin{itemize}
+	  \item Delete research group - Research group is deleted from the  Report system. 
+	  \item Add research group - A new Research group is created and added into the Report system database with no 				duplicate
+	  research groups. 
+	  \item View research group - The profile of a research group is viwed, which shows all the members on that 					research group.
+	  \item Add researcher - A new researcher is added into a specified research group.
+	  \item Update research group -The research group is updated.
+	\end{itemize}
+	
+	
 	\subsection{Required Functionality}
 	\subsubsection{Report Subsystem Use Case}
 	\includegraphics[width=\textwidth]{ReportUseCase}
+
 	\subsubsection{Research Group Subsystem Use Case}
 	\includegraphics[width=\textwidth]{ResearchGroup}
 	
