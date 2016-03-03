@@ -89,9 +89,33 @@
 	Client has not provided any architecture constraints.
 	
 	\section{Functional Requirements and Application Design}
+	\subsection{Use Case Prioritization}
+
+		% Add critical use cases here %
+	\textbf{Important:}
+	\begin{itemize}
+		% Add important use cases here %
+		\item Report Subsystem
+	\end{itemize}
+		% Add nice-to-have use cases here %
+
+	\subsection{Use Case/Service Contracts}
+	% Add each use case here as a subsubsection %
+	\subsubsection{Report Subsystem}
+	\textbf{Pre-Conditions:}
+	\begin{itemize}
+		\item User must be logged in to be able to generate a report.
+	\end{itemize}
+	\textbf{Post-Conditions:}
+	\begin{itemize}
+		\item A simple but comprehensive report must be generated in the format chosen by the user.
+		\item The report must only include papers that the current user is associated with.
+	\end{itemize}
+	
 	\subsection{Required Functionality}
 	\subsubsection{Report Subsystem Use Case}
 	\includegraphics[width=\textwidth]{ReportUseCase}
+
 	\subsubsection{Research Group Subsystem Use Case}
 	\includegraphics[width=\textwidth]{ResearchGroup}
 	
