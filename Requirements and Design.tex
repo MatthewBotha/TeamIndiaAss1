@@ -33,11 +33,11 @@
 	\begin{minipage}{0.4\textwidth}
 	\begin{flushleft} \large
 	\emph{Members:}\\% add your name
-	Matthew Botha
+	Matthew Botha 14214742
 
 	Gershom Maluleke
 
-	Nathan Dunkley
+	Nathan Dunkley 14145759
 
 	Aiden Malan
 
@@ -60,6 +60,10 @@
 
 
 	\newpage
+	
+	\section{Introduction}
+	
+	TODO!! This still needs to be completed.
 
 	\section{Vision}
 
@@ -89,36 +93,129 @@
 	Client has not provided any architecture constraints.
 	
 	\section{Functional Requirements and Application Design}
-	\subsection{Use Case Prioritization}
-
-		% Add critical use cases here %
-	\textbf{Important:}
-	\begin{itemize}
-		% Add important use cases here %
-		\item Report Subsystem
-	\end{itemize}
-		% Add nice-to-have use cases here %
-
-	\subsection{Use Case/Service Contracts}
-	% Add each use case here as a subsubsection %
-	\subsubsection{Report Subsystem}
-	\textbf{Pre-Conditions:}
-	\begin{itemize}
-		\item User must be logged in to be able to generate a report.
-	\end{itemize}
-	\textbf{Post-Conditions:}
-	\begin{itemize}
-		\item A simple but comprehensive report must be generated in the format chosen by the user.
-		\item The report must only include papers that the current user is associated with.
-	\end{itemize}
-	
-	\subsection{Required Functionality}
-	\subsubsection{Report Subsystem Use Case}
-	\includegraphics[width=\textwidth]{ReportUseCase}
-
-	\subsubsection{Research Group Subsystem Use Case}
-	\includegraphics[width=\textwidth]{ResearchGroup}
-	
+		\subsection{Use case Prioritisatoin}
+			\subsubsection{Conference Subsystem}
+				\textbf{Add Conference:} important\\
+				\textbf{Update Conference:} important\\
+				\textbf{Delete Conference:} important
+			\subsubsection{Journal Subsystem}
+				\textbf{Add Journal:} important\\
+				\textbf{Update Journal:} important\\
+				\textbf{Delete Journal:} important
+			\subsubsection{Thesis Subsystem}
+				\textbf{Add Thesis:} important\\
+				\textbf{Update Thesis:} important\\
+				\textbf{Delete Thesis:} important
+			\subsubsection{Report Subsystem}
+				\textbf{Log In to System:} critical\\
+				\textbf{View Available Reports:} important\\
+				\textbf{Select Filters to Apply to Reports:} important\\
+				\textbf{Select Output Type of Report:} nice-to-have\\
+				\textbf{Show Report:} important\\
+		\subsection{Use case/Services contracts}
+			\subsubsection{Conference Subsystem}
+				\textbf{Add Conference:}\\
+					\indent \textbf{Pre-conditions:} The user must be logged in.\\
+					\indent \textbf{Post-conditions:} The conference is added.\\
+				\textbf{Update Conference:}\\
+					\indent \textbf{Pre-conditions:} The user must be logged in and a the conference must be added prior to this use case.\\
+					\indent \textbf{Post-conditions:} The conference is updated.\\
+				\textbf{Delete Conference:}\\
+					\indent \textbf{Pre-conditions:} The user must be logged in and a the conference must be added prior to this use case.\\
+					\indent \textbf{Post-conditions:} The conference is deleted.\\
+			\subsubsection{Journal Subsystem}
+				\textbf{Add Journal:}\\
+					\indent \textbf{Pre-conditions:} The user must be logged in.\\
+					\indent \textbf{Post-conditions:} The journal is added.\\
+				\textbf{Update Journal:}\\
+					\indent \textbf{Pre-conditions:} The user must be logged in and a the journal must be added prior to this use case.\\
+					\indent \textbf{Post-conditions:} The journal is updated.\\
+				\textbf{Delete Journal:}\\
+					\indent \textbf{Pre-conditions:} The user must be logged in and a the journal must be added prior to this use case.\\
+					\indent \textbf{Post-conditions:} The journal is deleted.\\
+			\subsubsection{Thesis Subsystem}
+				\textbf{Add Thesis:}\\
+					\indent \textbf{Pre-conditions:} The user must be logged in.\\
+					\indent \textbf{Post-conditions:} The thesis is added.\\
+				\textbf{Update Thesis:}\\
+					\indent \textbf{Pre-conditions:} The user must be logged in and a the thesis must be added prior to this use case.\\
+					\indent \textbf{Post-conditions:} The thesis is updated.\\
+				\textbf{Delete Thesis:}\\
+					\indent \textbf{Pre-conditions:} The user must be logged in and a the thesis must be added prior to this use case.\\
+					\indent \textbf{Post-conditions:} The thesis is deleted.\\
+			\subsubsection{Report Subsystem}
+				\textbf{Pre-Conditions:} User must be logged in to be able to generate a report.\\
+				\textbf{Post-Conditions:}
+				\begin{itemize}
+					\item A simple but comprehensive report must be generated in the format chosen by the user.
+					\item The report must only include papers that the current user is associated with.
+				\end{itemize}
+					
+			\subsubsection{Conference, Journal and Thesis Subsystem Request and Results Data Structures}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{SS5-SS7}
+					\caption{Use case diagram for the Conference, Journal and Thesis Subsystems}
+				\end{figure}
+		\subsection{Required Functionality}
+			\subsubsection{Report Subsystem Use Case}
+				\includegraphics[width=\textwidth]{ReportUseCase}
+			\subsubsection{Research Group Subsystem Use Case}
+				\includegraphics[width=\textwidth]{ResearchGroup}
+			\subsubsection{Conference Subsystem Use Case}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.3-SS5-7/Add-Conference}
+					\caption{Add Conference}
+				\end{figure}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.3-SS5-7/Update-Conference}
+					\caption{Update Conference}
+				\end{figure}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.3-SS5-7/Delete-Conference}
+					\caption{Delete Conference}
+				\end{figure}
+			\subsubsection{Journal Subsystem Use Case}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.3-SS5-7/Add-Journal}
+					\caption{Add Journal}
+				\end{figure}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.3-SS5-7/Update-Journal}
+					\caption{Update Journal}
+				\end{figure}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.3-SS5-7/Delete-Journal}
+					\caption{Delete Journal}
+				\end{figure}
+			\subsubsection{Thesis Subsystem Use Case}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.3-SS5-7/Add-Thesis}
+					\caption{Add Thesis}
+				\end{figure}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.3-SS5-7/Update-Thesis}
+					\caption{Update Thesis}
+				\end{figure}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.3-SS5-7/Delete-Thesis}
+					\caption{Delete Thesis}
+				\end{figure}
+		\subsection{Process Specifications}
+			\subsubsection{Conference Subsystem}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.4-SS5-7/SS5}
+					\caption{Conference State Diagram}
+				\end{figure}
+			\subsubsection{Journal Subsystem}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.4-SS5-7/SS6}
+					\caption{Journal State Diagram}
+				\end{figure}
+			\subsubsection{Thesis Subsystem}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{5.4-SS5-7/SS7}
+					\caption{Thesis State Diagram}
+				\end{figure}
 
 	\section{Open Issues}
 	\begin{itemize}
