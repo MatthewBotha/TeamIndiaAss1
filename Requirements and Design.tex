@@ -46,7 +46,7 @@
 
 	Sello Thosago
 
-	Nsovo Baloyi
+	Nsovo Baloyi 12163262
 
 	Matheu Botha 14284104
 	\end{flushleft}
@@ -104,6 +104,13 @@
 				Login User: Critical\par
 				Logout User: Critical\par
 				Add to Publication: Important
+			\subsubsection{Publication Subsystem}
+			\textbf{Create Publication:} Important\\
+			\textbf{View Publication:} Nice-to-Have\\
+			\textbf{Update Publication:} Important\\
+			\textbf{Remove Publication:} Important\\
+			\textbf{Add Author: Important}
+			\textbf{Remove Author: Important}
 			\subsubsection{Conference Subsystem}
 				\textbf{Add Conference:} important\\
 				\textbf{Update Conference:} important\\
@@ -136,6 +143,26 @@
 				\paragraph{Login user:} The user is logged into the system.
 				\paragraph{Logout user:} The user is logged out of the system.
 				\paragraph{Add to publication:} The user's name is now added to the author's of the selected publication.
+			\subsubsection{Publication Subsystem}
+				\textbf{Use Cases:}\\
+				\indent \textbf{3.1 Create Publication:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged into the system\\
+					\indent \indent \textbf{Post-conditions:}The publication is created\\
+				\indent \textbf{3.2 View Publication:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged onto the system and the publication must be created before hand\\
+					\indent \indent \textbf{Post-conditions:}The user will be able to view and edit(Add authors etc.) to the publication.\\
+				\indent \textbf{3.3 Update Publication:}\\
+					\indent \indent \textbf{Pre-conditions:} The user must be logged onto the system and the publication must be created before hand\\
+					\indent \indent \textbf{Post-conditions:}The publication is updated\\
+				\indent \textbf{3.4 Remove Publication:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged onto the system, the publication must be created before hand and the user must confirm the removal of the publication\\
+					\indent \indent \textbf{Post-conditions:}The publication will be removed\\
+				\indent \textbf{3.5 Add Author:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged onto the system and the publication must be created before hand\\
+					\indent \indent \textbf{Post-conditions:}A new author is added to the publication\\
+				\indent \textbf{3.6 Remove Author:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged onto the system, the publication must be created before hand and the user must confirm the removal of the selected author\\
+					\indent \indent \textbf{Post-conditions:}The author is removed from the publication\\
 			\subsubsection{Conference Subsystem}
 				\textbf{Add Conference:}\\
 					\indent \textbf{Pre-conditions:} The user must be logged in.\\
@@ -187,6 +214,7 @@
 				\includegraphics[width=\textwidth]{LoginUser}
 				\includegraphics[width=\textwidth]{LogoutUser}
 				\includegraphics[width=\textwidth]{AddtoPublication}
+			
 			\subsubsection{Research Group Subsystem Use Case}
 				\includegraphics[width=\textwidth]{ResearchGroup}
 			\subsubsection{Conference Subsystem Use Case}
