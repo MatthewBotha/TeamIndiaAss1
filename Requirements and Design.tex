@@ -3,6 +3,8 @@
 \graphicspath{ {images/} }
 
 
+\newcommand{\tab}[1]{\hspace{.1\textwidth}\rlap{#1}}
+
 \begin{document}
 	
 \begin{titlepage}
@@ -30,12 +32,13 @@
 	%	MEMBERS, TEAM NAME SECTION
 	%----------------------------------------------------------------------------------------
 
-	\begin{minipage}{0.4\textwidth}
+	\begin{minipage}{0.5\textwidth}
 	\begin{flushleft} \large
 	\emph{Members:}\\% add your name
 	Matthew Botha 14214742
 
-	Gershom Maluleke
+	Gershom Maluleke:\tab{13229908}
+
 
 	Nathan Dunkley 14145759
 
@@ -93,6 +96,7 @@
 	Client has not provided any architecture constraints.
 	
 	\section{Functional Requirements and Application Design}
+<<<<<<< HEAD
 		\subsection{Use case Prioritisation}
 			\subsubsection{User Subsystem}
 				Register User: Critical\par
@@ -162,6 +166,11 @@
 				\textbf{Delete Thesis:}\\
 					\indent \textbf{Pre-conditions:} The user must be logged in and a the thesis must be added prior to this use case.\\
 					\indent \textbf{Post-conditions:} The thesis is deleted.\\
+			\subsubsection{Conference, Journal and Thesis Subsystem Request and Results Data Structures}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{SS5-SS7}
+					\caption{Use case diagram for the Conference, Journal and Thesis Subsystems}
+				\end{figure}
 			\subsubsection{Report Subsystem}
 				\textbf{Pre-Conditions:} User must be logged in to be able to generate a report.\\
 				\textbf{Post-Conditions:}
@@ -169,11 +178,7 @@
 					\item A simple but comprehensive report must be generated in the format chosen by the user.
 					\item The report must only include papers that the current user is associated with.
 				\end{itemize}
-			\subsubsection{Conference, Journal and Thesis Subsystem Request and Results Data Structures}
-				\begin{figure}
-					\includegraphics[width=\textwidth]{SS5-SS7}
-					\caption{Use case diagram for the Conference, Journal and Thesis Subsystems}
-				\end{figure}
+				
 		\subsection{Required Functionality}
 			\subsubsection{User Subsystem Use Case}
 				\includegraphics[width=\textwidth]{UserSubsystem}
@@ -223,8 +228,6 @@
 					\includegraphics[width=\textwidth]{5.3-SS5-7/Delete-Thesis}
 					\caption{Delete Thesis}
 				\end{figure}
-			\subsubsection{Report Subsystem Use Case}
-				\includegraphics[width=\textwidth]{ReportUseCase}
 			\subsubsection{Report Subsystem Use Case}
 				\includegraphics[width=\textwidth]{ReportUseCase}
 		\subsection{Process Specifications}
