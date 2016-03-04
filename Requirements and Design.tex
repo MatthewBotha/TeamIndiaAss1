@@ -41,7 +41,7 @@
 
 	Aiden Malan 12265731
 
-	Sello Thosago 13062060
+	Sello Thosago
 
 	Nsovo Baloyi 12163262
 
@@ -124,7 +124,7 @@
 				\textbf{Create research paper:} important\\
 				\textbf{Update research paper:} important\\
 				\textbf{Remove research paper:} important\\
-				\textbf{View research paper:} nice to have
+				\textbf{View research paper:} nice to have\\
 			\subsubsection{Report Subsystem}
 				\textbf{Log In to System:} critical\\
 				\textbf{View Available Reports:} important\\
@@ -195,6 +195,35 @@
 				\textbf{Delete Thesis:}\\
 					\indent \textbf{Pre-conditions:} The user must be logged in and a the thesis must be added prior to this use case.\\
 					\indent \textbf{Post-conditions:} The thesis is deleted.\\
+			\subsubsection{Researchers and Authors Subsystem}
+				\indent \textbf{3.1 Create Research Paper:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged into the system. The user must also be either HOD, research leader or author.\\
+					\indent \indent \textbf{Post-conditions:}The research paper is created.\\
+					\begin{figure}
+						\includegraphics[width=\textwidth]{createResearchPaper}
+						\caption{Pre and Post conditions create function}
+					\end{figure}
+				\indent \textbf{3.2 Update Research Paper:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged onto the system and the research paper must exist.\\
+					\indent \indent \textbf{Post-conditions:}The user will be able to view and edit(Add authors etc.) to the research paper.\\
+					\begin{figure}
+						\includegraphics[width=\textwidth]{updatePAper}
+						\caption{Pre and Post conditions update function}
+					\end{figure}
+				\indent \textbf{3.3 Remove Research Paper:}\\
+					\indent \indent \textbf{Pre-conditions:} The user must be logged onto the system and the research paper must exist.\\
+					\indent \indent \textbf{Post-conditions:}The the research paper is deleted.\\
+					\begin{figure}
+						\includegraphics[width=\textwidth]{remove.research}
+						\caption{Pre and Post conditions remove function}
+					\end{figure}
+				\indent \textbf{3.4 View Research Paper:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged onto the system, the research paper must exist.\\
+					\indent \indent \textbf{Post-conditions:}The publication can be viewed\\
+					\begin{figure}
+						\includegraphics[width=\textwidth]{viewPaper}
+						\caption{Pre and Post conditions view function}
+					\end{figure}
 			\subsubsection{Conference, Journal and Thesis Subsystem Request and Results Data Structures}
 				\begin{figure}
 					\includegraphics[width=\textwidth]{SS5-SS7}
@@ -256,6 +285,11 @@
 				\begin{figure}
 					\includegraphics[width=\textwidth]{5.3-SS5-7/Delete-Conference}
 					\caption{Delete Conference}
+				\end{figure}
+			\subsubsection{Research and authors Subsystem Use Case}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{authorsSubsystem}
+					\caption{Research and authors use case diagram}
 				\end{figure}
 			\subsubsection{Journal Subsystem Use Case}
 				\begin{figure}
