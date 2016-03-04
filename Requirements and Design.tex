@@ -94,6 +94,12 @@
 	
 	\section{Functional Requirements and Application Design}
 		\subsection{Use case Prioritisatoin}
+			\subsubsection{User Subsystem}
+				Register User: Critical\par
+				Update User: Important\par
+				Login User: Critical\par
+				Logout User: Critical\par
+				Add to Publication: Important
 			\subsubsection{Conference Subsystem}
 				\textbf{Add Conference:} important\\
 				\textbf{Update Conference:} important\\
@@ -107,6 +113,19 @@
 				\textbf{Update Thesis:} important\\
 				\textbf{Delete Thesis:} important
 		\subsection{Use case/Services contracts}
+			\subsubsection{User Subsystem}
+				\paragraph{Pre-conditions:}
+				\paragraph{Register user:} The user can not be registered to the system already and the user registering a new user has to be admin.
+				\paragraph{Update user:} The user has to be logged in first before they can update their profile and they can only update their own profile.
+				\paragraph{Login user:} The user has to be registered to the system first.
+				\paragraph{Logout user:} The user has to be logged in first.
+				\paragraph{Add to publication:} The user has to be logged in first and the publication has to exist in the system
+				\paragraph{Post-conditions:}
+				\paragraph{Register user:} The user is now registered and added to the database.
+				\paragraph{Update user:} The user's profile is updated and the changes are saved to the database.
+				\paragraph{Login user:} The user is logged into the system.
+				\paragraph{Logout user:} The user is logged out of the system.
+				\paragraph{Add to publication:} The user's name is now added to the author's of the selected publication.
 			\subsubsection{Conference Subsystem}
 				\textbf{Add Conference:}\\
 					\indent \textbf{Pre-conditions:} The user must be logged in.\\
@@ -144,8 +163,13 @@
 					\caption{Use case diagram for the Conference, Journal and Thesis Subsystems}
 				\end{figure}
 		\subsection{Required Functionality}
-			\subsubsection{Report Subsystem Use Case}
-				\includegraphics[width=\textwidth]{ReportUseCase}
+			\subsubsection{User Subsystem Use Case}
+				\includegraphics[width=\textwidth]{UserSubsystem}
+				\includegraphics[width=\textwidth]{RegisterUser}
+				\includegraphics[width=\textwidth]{UpdateUser}
+				\includegraphics[width=\textwidth]{LoginUser}
+				\includegraphics[width=\textwidth]{LogoutUser}
+				\includegraphics[width=\textwidth]{AddtoPublication}
 			\subsubsection{Research Group Subsystem Use Case}
 				\includegraphics[width=\textwidth]{ResearchGroup}
 			\subsubsection{Conference Subsystem Use Case}
@@ -187,6 +211,8 @@
 					\includegraphics[width=\textwidth]{5.3-SS5-7/Delete-Thesis}
 					\caption{Delete Thesis}
 				\end{figure}
+			\subsubsection{Report Subsystem Use Case}
+				\includegraphics[width=\textwidth]{ReportUseCase}
 		\subsection{Process Specifications}
 			\subsubsection{Conference Subsystem}
 				\begin{figure}
@@ -203,7 +229,6 @@
 					\includegraphics[width=\textwidth]{5.4-SS5-7/SS7}
 					\caption{Thesis State Diagram}
 				\end{figure}
-
 	\section{Open Issues}
 	\begin{itemize}
 		\item What does DoE stand for?
