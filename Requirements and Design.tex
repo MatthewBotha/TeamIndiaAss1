@@ -48,7 +48,7 @@
 
 	Nsovo Baloyi
 
-	Matheu Botha 
+	Matheu Botha 14284104
 	\end{flushleft}
 	\end{minipage}
 	~
@@ -77,23 +77,23 @@
 	Currently the publications are kept track of with a complicated excel spreadsheet. The purpose of the spreadsheet is to keep track of the status of publications in order to generate a report detailing the units earned by a researcher. There are many drawbacks to this system. It is tedious to maintain the spreedsheet. Data is spread over multiple sheets. The larger the database gets the slower it preforms. The information is displayed in a raw textual format which makes it a daunting task to sit through and analyse. It is difficult to add new functionality and change or enhance existing functionality. When pulling in data from multiple sheets it becomes difficult to debug the Lookups.
 
 	\section{Architecture}
-	\subsection{Access Channels}
-	This service should be accessable via web based clients. i.e. web based clients,mobile browsers. As well as an Android application.
+		\subsection{Access Channels}
+		This service should be accessable via web based clients. i.e. web based clients,mobile browsers. As well as an Android application.
 
-	\subsection{Quality Requirements}
-	\begin{itemize}
-	  \item Reliability - The reports generated from the data provided to the system should be
-	  \item Scalability - It is estimated that there will be approximatly one hundred users. The system should be able to handle each user being active at the same time even though it is unlikly.
-	  \item Cost - Generating a report for all data in the system will be the worst case scenario in this system and thus have a high cost. The system should however be able to produce subsets of the report at a relativly low cost. For example a report for all researchers under a specific research group.
-	  \item Security - There should be strict access right applied to each of the subsystems and their components. This means that if a user, by definition of the buisness rules, is not allowed to access a certain functionality, then they will be denied access.
-	  \item Auditability - Actions performed on the system should be logged in a manner that would allow one to trace back the history of actions performed on the system.
-	\end{itemize}
+		\subsection{Quality Requirements}
+		\begin{itemize}
+		  \item Reliability - The reports generated from the data provided to the system should be
+		  \item Scalability - It is estimated that there will be approximatly one hundred users. The system should be able to handle each user being active at the same time even though it is unlikly.
+		  \item Cost - Generating a report for all data in the system will be the worst case scenario in this system and thus have a high cost. The system should however be able to produce subsets of the report at a relativly low cost. For example a report for all researchers under a specific research group.
+		  \item Security - There should be strict access right applied to each of the subsystems and their components. This means that if a user, by definition of the buisness rules, is not allowed to access a certain functionality, then they will be denied access.
+		  \item Auditability - Actions performed on the system should be logged in a manner that would allow one to trace back the history of actions performed on the system.
+		\end{itemize}
 
-	\subsection{Intergration Requirements}
-	The system will operate in a standalone fashion. In the future, however, it may require intergration with google calender.
+		\subsection{Intergration Requirements}
+		The system will operate in a standalone fashion. In the future, however, it may require intergration with google calender.
 
-	\subsection{Architecture Constraints}
-	Client has not provided any architecture constraints.
+		\subsection{Architecture Constraints}
+		Client has not provided any architecture constraints.
 	
 	\section{Functional Requirements and Application Design}
 <<<<<<< HEAD
@@ -246,6 +246,11 @@
 					\includegraphics[width=\textwidth]{5.4-SS5-7/SS7}
 					\caption{Thesis State Diagram}
 				\end{figure}
+		\subsection{Domain Model}
+			\begin{figure}
+					\includegraphics[width=\textwidth]{DomainModel/DomainModel}
+					\caption{Domain Model}
+			\end{figure}
 	\section{Open Issues}
 	\begin{itemize}
 		\item What does DoE stand for?
