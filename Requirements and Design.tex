@@ -135,6 +135,11 @@
 				\textbf{Add Thesis:} important\\
 				\textbf{Update Thesis:} important\\
 				\textbf{Delete Thesis:} important
+			\subsubsection{Research and Authors Subsystem}
+				\textbf{Create research paper:} important\\
+				\textbf{Update research paper:} important\\
+				\textbf{Remove research paper:} important\\
+				\textbf{View research paper:} nice to have\\
 			\subsubsection{Report Subsystem}
 				\textbf{Log In to System:} critical\\
 				\textbf{View Available Reports:} important\\
@@ -205,6 +210,35 @@
 				\textbf{Delete Thesis:}\\
 					\indent \textbf{Pre-conditions:} The user must be logged in and a the thesis must be added prior to this use case.\\
 					\indent \textbf{Post-conditions:} The thesis is deleted.\\
+			\subsubsection{Researchers and Authors Subsystem}
+				\indent \textbf{3.1 Create Research Paper:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged into the system. The user must also be either HOD, research leader or author.\\
+					\indent \indent \textbf{Post-conditions:}The research paper is created.\\
+					\begin{figure}
+						\includegraphics[width=\textwidth]{createResearchPaper}
+						\caption{Pre and Post conditions create function}
+					\end{figure}
+				\indent \textbf{3.2 Update Research Paper:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged onto the system and the research paper must exist.\\
+					\indent \indent \textbf{Post-conditions:}The user will be able to view and edit(Add authors etc.) to the research paper.\\
+					\begin{figure}
+						\includegraphics[width=\textwidth]{updatePAper}
+						\caption{Pre and Post conditions update function}
+					\end{figure}
+				\indent \textbf{3.3 Remove Research Paper:}\\
+					\indent \indent \textbf{Pre-conditions:} The user must be logged onto the system and the research paper must exist.\\
+					\indent \indent \textbf{Post-conditions:}The the research paper is deleted.\\
+					\begin{figure}
+						\includegraphics[width=\textwidth]{removeResearch}
+						\caption{Pre and Post conditions remove function}
+					\end{figure}
+				\indent \textbf{3.4 View Research Paper:}\\
+					\indent \indent \textbf{Pre-conditions:}The user must be logged onto the system, the research paper must exist.\\
+					\indent \indent \textbf{Post-conditions:}The publication can be viewed\\
+					\begin{figure}
+						\includegraphics[width=\textwidth]{viewPaper}
+						\caption{Pre and Post conditions view function}
+					\end{figure}
 			\subsubsection{Conference, Journal and Thesis Subsystem Request and Results Data Structures}
 				\begin{figure}
 					\includegraphics[width=\textwidth]{SS5-SS7}
@@ -267,6 +301,11 @@
 					\includegraphics[width=\textwidth]{5.3-SS5-7/Delete-Conference}
 					\caption{Delete Conference}
 				\end{figure}
+			\subsubsection{Research and authors Subsystem Use Case}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{authorsSubsystem}
+					\caption{Research and authors use case diagram}
+				\end{figure}
 			\subsubsection{Journal Subsystem Use Case}
 				\begin{figure}
 					\includegraphics[width=\textwidth]{5.3-SS5-7/Add-Journal}
@@ -297,23 +336,25 @@
 				\includegraphics[width=\textwidth]{ReportUseCase}
 		\subsection{Process Specifications}
 			\subsubsection{Conference Subsystem}
-				\begin{figure}
-					\includegraphics[width=\textwidth]{5.4-SS5-7/SS5}
+				\begin{figure}[h]
+					\centerline{\includegraphics[width=186px]{5.4-SS5-7/SS5}}
 					\caption{Conference State Diagram}
 				\end{figure}
+				\newpage
 			\subsubsection{Journal Subsystem}
-				\begin{figure}
-					\includegraphics[width=\textwidth]{5.4-SS5-7/SS6}
+				\begin{figure}[h]
+					\centerline{\includegraphics[width=186px]{5.4-SS5-7/SS6}}
 					\caption{Journal State Diagram}
 				\end{figure}
 			\subsubsection{Thesis Subsystem}
-				\begin{figure}
-					\includegraphics[width=\textwidth]{5.4-SS5-7/SS7}
+				\begin{figure}[h!]
+					\centerline{\includegraphics[width=186px]{5.4-SS5-7/SS7}}
 					\caption{Thesis State Diagram}
 				\end{figure}
+				\newpage
 		\subsection{Domain Model}
-			\begin{figure}
-					\includegraphics[width=\textwidth]{DomainModel/DomainModel}
+			\begin{figure}[h!]
+				\centerline{\includegraphics[width=186px]{DomainModel/DomainModel}}
 					\caption{Domain Model}
 			\end{figure}
 	\section{Open Issues}
