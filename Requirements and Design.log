@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.17)  11 MAR 2016 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.18)  11 MAR 2016 12:21
 entering extended mode
-**"C:/Users/Nathan/Desktop/Temp/Requirements and Design.tex"
-("C:/Users/Nathan/Desktop/Temp/Requirements and Design.tex"
+**"./Requirements and Design.tex"
+("Requirements and Design.tex"
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9n> and hyphenation patterns for 69 languages loaded.
-("E:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("E:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,39 +21,45 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("E:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("E:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("E:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("E:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("E:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphics.
+cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
 
-("E:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.
+def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("E:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("E:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
-)
-("Requirements and Design.aux")
+) ("Requirements and Design.aux")
 \openout1 = `"Requirements and Design.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -69,7 +75,8 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 
-("E:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
 \scratchdimen=\dimen105
@@ -94,354 +101,369 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 53.
  [1
 
-{C:/Users/Nathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/f
-ront-page.jpg>]
+{C:/Users/Nsovo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/fr
+ont-page.jpg>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
 
-("E:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("C:\Users\Nsovo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
- [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 126--132
 
+[1] [2]
+Overfull \hbox (4.93433pt too wide) in paragraph at lines 119--120
+[]\OT1/cmr/bx/n/10 MongoDB \OT1/cmr/m/n/10 is a cross plat-form document-orient
+ed database. This database,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--149
-
+Overfull \hbox (10.41354pt too wide) in paragraph at lines 128--129
+[]\OT1/cmr/bx/n/10 NodeJS \OT1/cmr/m/n/10 for the server-side script-ing. It wi
+ll com-mu-ni-cate with the database.
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 150--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--189
+Underfull \hbox (badness 10000) in paragraph at lines 158--164
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 190--199
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--209
+Underfull \hbox (badness 10000) in paragraph at lines 182--187
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 210--219
+Underfull \hbox (badness 10000) in paragraph at lines 202--221
 
  []
 
-<images/createResearchPaper.jpg, id=27, 993.7125pt x 509.905pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--231
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 232--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--251
+
+ []
+
+<images/createResearchPaper.jpg, id=31, 993.7125pt x 509.905pt>
 File: images/createResearchPaper.jpg Graphic file (type jpg)
 
 <use images/createResearchPaper.jpg>
-Package pdftex.def Info: images/createResearchPaper.jpg used on input line 224.
+Package pdftex.def Info: images/createResearchPaper.jpg used on input line 256.
 
 (pdftex.def)             Requested size: 345.0pt x 177.03001pt.
 
-<images/updatePAper.jpg, id=28, 965.6075pt x 509.905pt>
+<images/updatePAper.jpg, id=32, 965.6075pt x 509.905pt>
 File: images/updatePAper.jpg Graphic file (type jpg)
 
 <use images/updatePAper.jpg>
-Package pdftex.def Info: images/updatePAper.jpg used on input line 231.
+Package pdftex.def Info: images/updatePAper.jpg used on input line 263.
 (pdftex.def)             Requested size: 345.0pt x 182.18073pt.
 
-<images/removeResearch.jpg, id=29, 965.6075pt x 509.905pt>
+<images/removeResearch.jpg, id=33, 965.6075pt x 509.905pt>
 File: images/removeResearch.jpg Graphic file (type jpg)
 
 <use images/removeResearch.jpg>
-Package pdftex.def Info: images/removeResearch.jpg used on input line 238.
+Package pdftex.def Info: images/removeResearch.jpg used on input line 270.
 (pdftex.def)             Requested size: 345.0pt x 182.18073pt.
 
-<images/viewPaper.jpg, id=30, 965.6075pt x 509.905pt>
+<images/viewPaper.jpg, id=34, 965.6075pt x 509.905pt>
 File: images/viewPaper.jpg Graphic file (type jpg)
 
 <use images/viewPaper.jpg>
-Package pdftex.def Info: images/viewPaper.jpg used on input line 245.
+Package pdftex.def Info: images/viewPaper.jpg used on input line 277.
 (pdftex.def)             Requested size: 345.0pt x 182.18073pt.
- [6] [7 <./images/createResearchPaper.jpg> <./images/updatePAper.jpg>] <images/
-SS5-SS7.jpg, id=38, 566.115pt x 882.29625pt>
+ [7]
+<images/SS5-SS7.jpg, id=38, 566.115pt x 882.29625pt>
 File: images/SS5-SS7.jpg Graphic file (type jpg)
-
-<use images/SS5-SS7.jpg>
-Package pdftex.def Info: images/SS5-SS7.jpg used on input line 250.
+ <use images/SS5-SS7.jpg>
+Package pdftex.def Info: images/SS5-SS7.jpg used on input line 282.
 (pdftex.def)             Requested size: 345.0pt x 537.70181pt.
 
 
-LaTeX Warning: Float too large for page by 11.64626pt on input line 252.
+LaTeX Warning: Float too large for page by 11.64626pt on input line 284.
 
 <images/UserSubsystem.jpg, id=39, 1041.8925pt x 542.025pt>
 File: images/UserSubsystem.jpg Graphic file (type jpg)
 
 <use images/UserSubsystem.jpg>
-Package pdftex.def Info: images/UserSubsystem.jpg used on input line 263.
+Package pdftex.def Info: images/UserSubsystem.jpg used on input line 295.
 (pdftex.def)             Requested size: 345.0pt x 179.48082pt.
 
 <images/RegisterUser.jpg, id=40, 924.45375pt x 509.905pt>
 File: images/RegisterUser.jpg Graphic file (type jpg)
 
 <use images/RegisterUser.jpg>
-Package pdftex.def Info: images/RegisterUser.jpg used on input line 264.
+Package pdftex.def Info: images/RegisterUser.jpg used on input line 296.
 (pdftex.def)             Requested size: 345.0pt x 190.29579pt.
 
 <images/UpdateUser.jpg, id=41, 924.45375pt x 509.905pt>
 File: images/UpdateUser.jpg Graphic file (type jpg)
 
 <use images/UpdateUser.jpg>
-Package pdftex.def Info: images/UpdateUser.jpg used on input line 265.
+Package pdftex.def Info: images/UpdateUser.jpg used on input line 297.
 (pdftex.def)             Requested size: 345.0pt x 190.29579pt.
 
 <images/LoginUser.jpg, id=42, 924.45375pt x 509.905pt>
 File: images/LoginUser.jpg Graphic file (type jpg)
 
 <use images/LoginUser.jpg>
-Package pdftex.def Info: images/LoginUser.jpg used on input line 266.
+Package pdftex.def Info: images/LoginUser.jpg used on input line 298.
 (pdftex.def)             Requested size: 345.0pt x 190.29579pt.
 
 <images/LogoutUser.jpg, id=43, 924.45375pt x 509.905pt>
 File: images/LogoutUser.jpg Graphic file (type jpg)
 
 <use images/LogoutUser.jpg>
-Package pdftex.def Info: images/LogoutUser.jpg used on input line 267.
+Package pdftex.def Info: images/LogoutUser.jpg used on input line 299.
 (pdftex.def)             Requested size: 345.0pt x 190.29579pt.
 
 <images/AddtoPublication.jpg, id=44, 924.45375pt x 509.905pt>
 File: images/AddtoPublication.jpg Graphic file (type jpg)
 
 <use images/AddtoPublication.jpg>
-Package pdftex.def Info: images/AddtoPublication.jpg used on input line 268.
+Package pdftex.def Info: images/AddtoPublication.jpg used on input line 300.
 (pdftex.def)             Requested size: 345.0pt x 190.29579pt.
- [8 <./images/removeResearch.jpg>] [9 <./images/viewPaper.jpg> <./images/UserSu
-bsystem.jpg>] [10 <./images/SS5-SS7.jpg>]
-[11 <./images/RegisterUser.jpg> <./images/UpdateUser.jpg>] [12 <./images/LoginU
-ser.jpg> <./images/LogoutUser.jpg>]
-<images/SS3_PublicationSubsystem.jpg, id=61, 905.3825pt x 542.025pt>
+ [8 <./images/createResearchPaper.jpg>]
+[9 <./images/updatePAper.jpg> <./images/removeResearch.jpg>] [10 <./images/view
+Paper.jpg> <./images/UserSubsystem.jpg>] [11 <./images/SS5-SS7.jpg>] [12 <./ima
+ges/RegisterUser.jpg> <./images/UpdateUser.jpg>] [13 <./images/LoginUser.jpg> <
+./images/LogoutUser.jpg>]
+<images/SS3_PublicationSubsystem.jpg, id=64, 905.3825pt x 542.025pt>
 File: images/SS3_PublicationSubsystem.jpg Graphic file (type jpg)
 
 <use images/SS3_PublicationSubsystem.jpg>
 Package pdftex.def Info: images/SS3_PublicationSubsystem.jpg used on input line
- 270.
+ 302.
 (pdftex.def)             Requested size: 345.0pt x 206.53403pt.
 
-<images/"5.3 SS3"/SS3-1_CreatePublication.jpg, id=62, 846.16125pt x 505.89pt>
+<images/"5.3 SS3"/SS3-1_CreatePublication.jpg, id=65, 846.16125pt x 505.89pt>
 File: images/"5.3 SS3"/SS3-1_CreatePublication.jpg Graphic file (type jpg)
 
 <use images/"5.3 SS3"/SS3-1_CreatePublication.jpg>
 Package pdftex.def Info: images/"5.3 SS3"/SS3-1_CreatePublication.jpg used on i
-nput line 272.
+nput line 304.
 (pdftex.def)             Requested size: 345.0pt x 206.25835pt.
 
-<images/"5.3 SS3"/SS3-2_ViewPublication.jpg, id=63, 846.16125pt x 505.89pt>
+<images/"5.3 SS3"/SS3-2_ViewPublication.jpg, id=66, 846.16125pt x 505.89pt>
 File: images/"5.3 SS3"/SS3-2_ViewPublication.jpg Graphic file (type jpg)
 
 <use images/"5.3 SS3"/SS3-2_ViewPublication.jpg>
 Package pdftex.def Info: images/"5.3 SS3"/SS3-2_ViewPublication.jpg used on inp
-ut line 276.
+ut line 308.
 (pdftex.def)             Requested size: 345.0pt x 206.25835pt.
 
-<images/"5.3 SS3"/SS3-3_UpdatePublication.jpg, id=64, 846.16125pt x 505.89pt>
+<images/"5.3 SS3"/SS3-3_UpdatePublication.jpg, id=67, 846.16125pt x 505.89pt>
 File: images/"5.3 SS3"/SS3-3_UpdatePublication.jpg Graphic file (type jpg)
 
 <use images/"5.3 SS3"/SS3-3_UpdatePublication.jpg>
 Package pdftex.def Info: images/"5.3 SS3"/SS3-3_UpdatePublication.jpg used on i
-nput line 280.
+nput line 312.
 (pdftex.def)             Requested size: 345.0pt x 206.25835pt.
 
-<images/"5.3 SS3"/SS3-4_RemovePublication.jpg, id=65, 846.16125pt x 505.89pt>
+<images/"5.3 SS3"/SS3-4_RemovePublication.jpg, id=68, 846.16125pt x 505.89pt>
 File: images/"5.3 SS3"/SS3-4_RemovePublication.jpg Graphic file (type jpg)
 
 <use images/"5.3 SS3"/SS3-4_RemovePublication.jpg>
 Package pdftex.def Info: images/"5.3 SS3"/SS3-4_RemovePublication.jpg used on i
-nput line 284.
+nput line 316.
 (pdftex.def)             Requested size: 345.0pt x 206.25835pt.
 
-<images/"5.3 SS3"/SS3-5_AddAuthor.jpg, id=66, 846.16125pt x 505.89pt>
+<images/"5.3 SS3"/SS3-5_AddAuthor.jpg, id=69, 846.16125pt x 505.89pt>
 File: images/"5.3 SS3"/SS3-5_AddAuthor.jpg Graphic file (type jpg)
 
 <use images/"5.3 SS3"/SS3-5_AddAuthor.jpg>
 Package pdftex.def Info: images/"5.3 SS3"/SS3-5_AddAuthor.jpg used on input lin
-e 288.
+e 320.
 (pdftex.def)             Requested size: 345.0pt x 206.25835pt.
 
-<images/"5.3 SS3"/SS3-6_RemoveAuthor.jpg, id=67, 862.22125pt x 521.95pt>
+<images/"5.3 SS3"/SS3-6_RemoveAuthor.jpg, id=70, 862.22125pt x 521.95pt>
 File: images/"5.3 SS3"/SS3-6_RemoveAuthor.jpg Graphic file (type jpg)
 
 <use images/"5.3 SS3"/SS3-6_RemoveAuthor.jpg>
 Package pdftex.def Info: images/"5.3 SS3"/SS3-6_RemoveAuthor.jpg used on input 
-line 292.
+line 324.
 (pdftex.def)             Requested size: 345.0pt x 208.84001pt.
 
-<images/ResearchGroup.jpg, id=68, 887.315pt x 542.025pt>
+<images/ResearchGroup.jpg, id=71, 887.315pt x 542.025pt>
 File: images/ResearchGroup.jpg Graphic file (type jpg)
 
 <use images/ResearchGroup.jpg>
-Package pdftex.def Info: images/ResearchGroup.jpg used on input line 296.
+Package pdftex.def Info: images/ResearchGroup.jpg used on input line 328.
 (pdftex.def)             Requested size: 345.0pt x 210.74379pt.
- [13 <./images/AddtoPublication.jpg> <./images/SS3_PublicationSubsystem.jpg>] [
-14 <./images/5.3 SS3/SS3-1_CreatePublication.jpg> <./images/5.3 SS3/SS3-2_ViewP
-ublication.jpg>] [15 <./images/5.3 SS3/SS3-3_UpdatePublication.jpg> <./images/5
-.3 SS3/SS3-4_RemovePublication.jpg>] [16 <./images/5.3 SS3/SS3-5_AddAuthor.jpg>
+ [14 <./images/AddtoPublication.jpg> <./images/SS3_PublicationSubsystem.jpg>] [
+15 <./images/5.3 SS3/SS3-1_CreatePublication.jpg> <./images/5.3 SS3/SS3-2_ViewP
+ublication.jpg>] [16 <./images/5.3 SS3/SS3-3_UpdatePublication.jpg> <./images/5
+.3 SS3/SS3-4_RemovePublication.jpg>] [17 <./images/5.3 SS3/SS3-5_AddAuthor.jpg>
  <./images/5.3 SS3/SS3-6_RemoveAuthor.jpg>]
-<images/5.3-SS5-7/Add-Conference.jpg, id=81, 552.0625pt x 271.0125pt>
+<images/5.3-SS5-7/Add-Conference.jpg, id=84, 552.0625pt x 271.0125pt>
 File: images/5.3-SS5-7/Add-Conference.jpg Graphic file (type jpg)
 
 <use images/5.3-SS5-7/Add-Conference.jpg>
 Package pdftex.def Info: images/5.3-SS5-7/Add-Conference.jpg used on input line
- 299.
+ 331.
 (pdftex.def)             Requested size: 345.0pt x 169.36998pt.
 
-<images/5.3-SS5-7/Update-Conference.jpg, id=82, 635.37375pt x 311.1625pt>
+<images/5.3-SS5-7/Update-Conference.jpg, id=85, 635.37375pt x 311.1625pt>
 File: images/5.3-SS5-7/Update-Conference.jpg Graphic file (type jpg)
 
 <use images/5.3-SS5-7/Update-Conference.jpg>
 Package pdftex.def Info: images/5.3-SS5-7/Update-Conference.jpg used on input l
-ine 303.
+ine 335.
 (pdftex.def)             Requested size: 345.0pt x 168.96059pt.
 
-<images/5.3-SS5-7/Delete-Conference.jpg, id=83, 642.4pt x 313.17pt>
+<images/5.3-SS5-7/Delete-Conference.jpg, id=86, 642.4pt x 313.17pt>
 File: images/5.3-SS5-7/Delete-Conference.jpg Graphic file (type jpg)
 
 <use images/5.3-SS5-7/Delete-Conference.jpg>
 Package pdftex.def Info: images/5.3-SS5-7/Delete-Conference.jpg used on input l
-ine 307.
+ine 339.
 (pdftex.def)             Requested size: 345.0pt x 168.19179pt.
 
-<images/authorsSubsystem.jpg, id=84, 903.375pt x 558.085pt>
+<images/authorsSubsystem.jpg, id=87, 903.375pt x 558.085pt>
 File: images/authorsSubsystem.jpg Graphic file (type jpg)
 
 <use images/authorsSubsystem.jpg>
-Package pdftex.def Info: images/authorsSubsystem.jpg used on input line 312.
+Package pdftex.def Info: images/authorsSubsystem.jpg used on input line 344.
 (pdftex.def)             Requested size: 345.0pt x 213.13896pt.
 
-<images/5.3-SS5-7/Add-Journal.jpg, id=85, 500.87125pt x 299.1175pt>
+<images/5.3-SS5-7/Add-Journal.jpg, id=88, 500.87125pt x 299.1175pt>
 File: images/5.3-SS5-7/Add-Journal.jpg Graphic file (type jpg)
 
 <use images/5.3-SS5-7/Add-Journal.jpg>
-Package pdftex.def Info: images/5.3-SS5-7/Add-Journal.jpg used on input line 31
-7.
+Package pdftex.def Info: images/5.3-SS5-7/Add-Journal.jpg used on input line 34
+9.
 (pdftex.def)             Requested size: 345.0pt x 206.03984pt.
 
-<images/5.3-SS5-7/Update-Journal.jpg, id=86, 622.325pt x 320.19624pt>
+<images/5.3-SS5-7/Update-Journal.jpg, id=89, 622.325pt x 320.19624pt>
 File: images/5.3-SS5-7/Update-Journal.jpg Graphic file (type jpg)
 
 <use images/5.3-SS5-7/Update-Journal.jpg>
 Package pdftex.def Info: images/5.3-SS5-7/Update-Journal.jpg used on input line
- 321.
+ 353.
 (pdftex.def)             Requested size: 345.0pt x 177.5107pt.
 
-<images/5.3-SS5-7/Delete-Journal.jpg, id=87, 635.37375pt x 313.17pt>
+<images/5.3-SS5-7/Delete-Journal.jpg, id=90, 635.37375pt x 313.17pt>
 File: images/5.3-SS5-7/Delete-Journal.jpg Graphic file (type jpg)
 
 <use images/5.3-SS5-7/Delete-Journal.jpg>
 Package pdftex.def Info: images/5.3-SS5-7/Delete-Journal.jpg used on input line
- 325.
+ 357.
 (pdftex.def)             Requested size: 345.0pt x 170.05064pt.
 
-<images/5.3-SS5-7/Add-Thesis.jpg, id=88, 488.82625pt x 263.98625pt>
+<images/5.3-SS5-7/Add-Thesis.jpg, id=91, 488.82625pt x 263.98625pt>
 File: images/5.3-SS5-7/Add-Thesis.jpg Graphic file (type jpg)
 
 <use images/5.3-SS5-7/Add-Thesis.jpg>
-Package pdftex.def Info: images/5.3-SS5-7/Add-Thesis.jpg used on input line 330
+Package pdftex.def Info: images/5.3-SS5-7/Add-Thesis.jpg used on input line 362
 .
 (pdftex.def)             Requested size: 345.0pt x 186.31575pt.
 
-<images/5.3-SS5-7/Update-Thesis.jpg, id=89, 650.43pt x 320.19624pt>
+<images/5.3-SS5-7/Update-Thesis.jpg, id=92, 650.43pt x 320.19624pt>
 File: images/5.3-SS5-7/Update-Thesis.jpg Graphic file (type jpg)
 
 <use images/5.3-SS5-7/Update-Thesis.jpg>
 Package pdftex.def Info: images/5.3-SS5-7/Update-Thesis.jpg used on input line 
-334.
+366.
 (pdftex.def)             Requested size: 345.0pt x 169.84pt.
 
-<images/5.3-SS5-7/Delete-Thesis.jpg, id=90, 691.58376pt x 306.14375pt>
+<images/5.3-SS5-7/Delete-Thesis.jpg, id=93, 691.58376pt x 306.14375pt>
 File: images/5.3-SS5-7/Delete-Thesis.jpg Graphic file (type jpg)
 
 <use images/5.3-SS5-7/Delete-Thesis.jpg>
 Package pdftex.def Info: images/5.3-SS5-7/Delete-Thesis.jpg used on input line 
-338.
+370.
 (pdftex.def)             Requested size: 345.0pt x 152.72113pt.
 
-<images/ReportUseCase.jpg, id=91, 1459.4525pt x 886.31125pt>
+<images/ReportUseCase.jpg, id=94, 1459.4525pt x 886.31125pt>
 File: images/ReportUseCase.jpg Graphic file (type jpg)
 
 <use images/ReportUseCase.jpg>
-Package pdftex.def Info: images/ReportUseCase.jpg used on input line 342.
+Package pdftex.def Info: images/ReportUseCase.jpg used on input line 374.
 (pdftex.def)             Requested size: 345.0pt x 209.51385pt.
- [17 <./images/5.3-SS5-7/Add-Conference.jpg> <./images/ResearchGroup.jpg>] [18 
+ [18 <./images/5.3-SS5-7/Add-Conference.jpg> <./images/ResearchGroup.jpg>] [19 
 <./images/5.3-SS5-7/Update-Conference.jpg> <./images/5.3-SS5-7/Delete-Conferenc
-e.jpg>] [19 <./images/authorsSubsystem.jpg> <./images/5.3-SS5-7/Add-Journal.jpg
->] [20 <./images/5.3-SS5-7/Update-Journal.jpg> <./images/5.3-SS5-7/Delete-Journ
-al.jpg>] [21 <./images/5.3-SS5-7/Add-Thesis.jpg> <./images/5.3-SS5-7/Update-The
+e.jpg>] [20 <./images/authorsSubsystem.jpg> <./images/5.3-SS5-7/Add-Journal.jpg
+>] [21 <./images/5.3-SS5-7/Update-Journal.jpg> <./images/5.3-SS5-7/Delete-Journ
+al.jpg>] [22 <./images/5.3-SS5-7/Add-Thesis.jpg> <./images/5.3-SS5-7/Update-The
 sis.jpg>]
-<images/5.4-SS5-7/SS5.jpg, id=108, 397.485pt x 348.30125pt>
+<images/5.4-SS5-7/SS5.jpg, id=111, 397.485pt x 348.30125pt>
 File: images/5.4-SS5-7/SS5.jpg Graphic file (type jpg)
 
 <use images/5.4-SS5-7/SS5.jpg>
-Package pdftex.def Info: images/5.4-SS5-7/SS5.jpg used on input line 346.
+Package pdftex.def Info: images/5.4-SS5-7/SS5.jpg used on input line 378.
 (pdftex.def)             Requested size: 186.69818pt x 163.60063pt.
- [22 <./images/5.3-SS5-7/Delete-Thesis.jpg> <./images/ReportUseCase.jpg>] [23 <
+ [23 <./images/5.3-SS5-7/Delete-Thesis.jpg> <./images/ReportUseCase.jpg>] [24 <
 ./images/5.4-SS5-7/SS5.jpg>]
-<images/5.4-SS5-7/SS6.jpg, id=115, 432.61626pt x 320.19624pt>
+<images/5.4-SS5-7/SS6.jpg, id=119, 432.61626pt x 320.19624pt>
 File: images/5.4-SS5-7/SS6.jpg Graphic file (type jpg)
 
 <use images/5.4-SS5-7/SS6.jpg>
-Package pdftex.def Info: images/5.4-SS5-7/SS6.jpg used on input line 352.
+Package pdftex.def Info: images/5.4-SS5-7/SS6.jpg used on input line 384.
 (pdftex.def)             Requested size: 186.69818pt x 138.18004pt.
 
-<images/5.4-SS5-7/SS7.jpg, id=116, 390.45876pt x 307.1475pt>
+<images/5.4-SS5-7/SS7.jpg, id=120, 390.45876pt x 307.1475pt>
 File: images/5.4-SS5-7/SS7.jpg Graphic file (type jpg)
 
 <use images/5.4-SS5-7/SS7.jpg>
-Package pdftex.def Info: images/5.4-SS5-7/SS7.jpg used on input line 357.
+Package pdftex.def Info: images/5.4-SS5-7/SS7.jpg used on input line 389.
 (pdftex.def)             Requested size: 186.69818pt x 146.86203pt.
- [24 <./images/5.4-SS5-7/SS6.jpg> <./images/5.4-SS5-7/SS7.jpg>]
-<images/DomainModel/DomainModel.jpg, id=121, 1052.93375pt x 1177.39874pt>
+ [25 <./images/5.4-SS5-7/SS6.jpg> <./images/5.4-SS5-7/SS7.jpg>]
+<images/DomainModel/DomainModel.jpg, id=124, 1052.93375pt x 1177.39874pt>
 File: images/DomainModel/DomainModel.jpg Graphic file (type jpg)
 
 <use images/DomainModel/DomainModel.jpg>
 Package pdftex.def Info: images/DomainModel/DomainModel.jpg used on input line 
-363.
+395.
 (pdftex.def)             Requested size: 186.69818pt x 208.76068pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
-[25 <./images/DomainModel/DomainModel.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 384--385
+[26 <./images/DomainModel/DomainModel.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
-[26] ("Requirements and Design.aux") ) 
+[27] ("Requirements and Design.aux") ) 
 Here is how much of TeX's memory you used:
- 1319 strings out of 493634
- 20538 string characters out of 3143741
+ 1318 strings out of 493634
+ 21039 string characters out of 3135239
  72413 words of memory out of 3000000
  4703 multiletter control sequences out of 15000+200000
  6111 words of font info for 22 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,6n,24p,755b,243s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmbx12.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Requirements and Design.pdf" (27 pages, 3937172 bytes).
+ 27i,6n,24p,728b,243s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Nsovo/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Nsovo/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Nsovo
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/Users/Nsovo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Users/Nsovo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><C:/Users/Nsovo/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb>
+Output written on "Requirements and Design.pdf" (28 pages, 3942337 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
+ 151 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
