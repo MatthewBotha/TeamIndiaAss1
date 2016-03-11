@@ -80,19 +80,34 @@
 
 		\subsection{Architecture requirements}
 			\subsubsection{Architectural scope}
+				Persistence infrastructure is important as storing data is one of the core functionalities of a functional system. There are many options with regard to maintaining data persistence
+				\begin{itemize}
+				  \item MySQL - This is a safe choice as most programmers are familiar with MySQL. This allows fast, reliable development.It’s An Industry Standard (And Still Extremely Popular). It is also compatible with most operating systems which makes deployment easy. There are also many well maintained libraries that can be used in most programming languages.
+				  \item MongoDB - This is becoming increasingly popular. It is a no sql database that stores the data in a similar format to json objects. This makes the database sizes more manageable and also allows operations such as database backups and migration to be performed far easier.
+				\end{itemize}
+				With regards to the reporting infrastructure we need to consider the need to generate the reports in a downloadable fashion.
+				\begin{itemize}
+				  \item CSV - Comma Seperated Value. These files are the most common and most basic way to export a set of data in a organised table format. This is most likely the approach that will be taken for the exportation of the variable data
+				\end{itemize}
+				We also need to consider the fact that report also have graphs. Thus we need a way to export the graphs, both to the interfaces and to the user.
+				\begin{itemize}
+				  \item SVG - Scalable Vector Graphic. This is widely prefered format type for data representation images as it allows for arbitrary levels of zoom. This is due to the fact that the images are defined as a set of verticies so a computer can display these verticies to any degree of granularity.
+				  \item JPEG - This is another prefered image format type as the images themselves are im a compressed format and the format is almost universaly supported.
+				\end{itemize}
+
 
 			\subsubsection{Quality requirements}
-					\begin{itemize}
-					  \item Reliability - The reports generated from the data provided to the system should be
-					  \item Scalability - It is estimated that there will be approximatly one hundred users. The system should be able to handle each user being active at the same time even though it is unlikly.
-					  \item Cost - Generating a report for all data in the system will be the worst case scenario in this system and thus have a high cost. The system should however be able to produce subsets of the report at a relativly low cost. For example a report for all researchers under a specific research group.
-					  \item Security - There should be strict access right applied to each of the subsystems and their components. This means that if a user, by definition of the buisness rules, is not allowed to access a certain functionality, then they will be denied access.
-					  \item Auditability - Actions performed on the system should be logged in a manner that would allow one to trace back the history of actions performed on the system.
-					\end{itemize}
+				\begin{itemize}
+				  \item Reliability - The reports generated from the data provided to the system should be reliable.
+				  \item Scalability - It is estimated that there will be approximatly one hundred users. The system should be able to handle each user being active at the same time even though it is unlikly.
+				  \item Cost - Generating a report for all data in the system will be the worst case scenario in this system and thus have a high cost. The system should however be able to produce subsets of the report at a relativly low cost. For example a report for all researchers under a specific research group.
+				  \item Security - There should be strict access right applied to each of the subsystems and their components. This means that if a user, by definition of the buisness rules, is not allowed to access a certain functionality, then they will be denied access.
+				  \item Auditability - Actions performed on the system should be logged in a manner that would allow one to trace back the history of actions performed on the system.
+				\end{itemize}
 
 			\subsubsection{Integration and access channel requirements}
-				The system will operate in a standalone fashion. In the future, however, it may require intergration with google calender.
-				This service should be accessable via web based clients. i.e. web based clients,mobile browsers. As well as an Android application.
+				The system needs to be accessed by a web interface as well as an android interface.
+				For the web integration it will be done using the REST architecture. In the REST architecture ecerything is treated as a resource. A restful service is usually highly scalable and maintainable. Resources are identified by URIs. The URI specifies an adress for the requested resource in a global adress space. Integration with the android interface will be similar as android apps communicate with http requests.
 
 			\subsubsection{Architectural constraints}
 				Client has not provided any architecture constraints.
