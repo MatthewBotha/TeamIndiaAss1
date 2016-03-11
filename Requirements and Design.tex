@@ -80,19 +80,34 @@
 
 		\subsection{Architecture requirements}
 			\subsubsection{Architectural scope}
+				Persistence infrastructure is important as storing data is one of the core functionalities of a functional system. There are many options with regard to maintaining data persistence
+				\begin{itemize}
+				  \item MySQL - This is a safe choice as most programmers are familiar with MySQL. This allows fast, reliable development.It’s An Industry Standard (And Still Extremely Popular). It is also compatible with most operating systems which makes deployment easy. There are also many well maintained libraries that can be used in most programming languages.
+				  \item MongoDB - This is becoming increasingly popular. It is a no sql database that stores the data in a similar format to json objects. This makes the database sizes more manageable and also allows operations such as database backups and migration to be performed far easier.
+				\end{itemize}
+				With regards to the reporting infrastructure we need to consider the need to generate the reports in a downloadable fashion.
+				\begin{itemize}
+				  \item CSV - Comma Seperated Value. These files are the most common and most basic way to export a set of data in a organised table format. This is most likely the approach that will be taken for the exportation of the variable data
+				\end{itemize}
+				We also need to consider the fact that report also have graphs. Thus we need a way to export the graphs, both to the interfaces and to the user.
+				\begin{itemize}
+				  \item SVG - Scalable Vector Graphic. This is widely prefered format type for data representation images as it allows for arbitrary levels of zoom. This is due to the fact that the images are defined as a set of verticies so a computer can display these verticies to any degree of granularity.
+				  \item JPEG - This is another prefered image format type as the images themselves are im a compressed format and the format is almost universaly supported.
+				\end{itemize}
+
 
 			\subsubsection{Quality requirements}
-					\begin{itemize}
-					  \item Reliability - The reports generated from the data provided to the system should be
-					  \item Scalability - It is estimated that there will be approximatly one hundred users. The system should be able to handle each user being active at the same time even though it is unlikly.
-					  \item Cost - Generating a report for all data in the system will be the worst case scenario in this system and thus have a high cost. The system should however be able to produce subsets of the report at a relativly low cost. For example a report for all researchers under a specific research group.
-					  \item Security - There should be strict access right applied to each of the subsystems and their components. This means that if a user, by definition of the buisness rules, is not allowed to access a certain functionality, then they will be denied access.
-					  \item Auditability - Actions performed on the system should be logged in a manner that would allow one to trace back the history of actions performed on the system.
-					\end{itemize}
+				\begin{itemize}
+				  \item Reliability - The reports generated from the data provided to the system should be reliable.
+				  \item Scalability - It is estimated that there will be approximatly one hundred users. The system should be able to handle each user being active at the same time even though it is unlikly.
+				  \item Cost - Generating a report for all data in the system will be the worst case scenario in this system and thus have a high cost. The system should however be able to produce subsets of the report at a relativly low cost. For example a report for all researchers under a specific research group.
+				  \item Security - There should be strict access right applied to each of the subsystems and their components. This means that if a user, by definition of the buisness rules, is not allowed to access a certain functionality, then they will be denied access.
+				  \item Auditability - Actions performed on the system should be logged in a manner that would allow one to trace back the history of actions performed on the system.
+				\end{itemize}
 
 			\subsubsection{Integration and access channel requirements}
-				The system will operate in a standalone fashion. In the future, however, it may require intergration with google calender.
-				This service should be accessable via web based clients. i.e. web based clients,mobile browsers. As well as an Android application.
+				The system needs to be accessed by a web interface as well as an android interface.
+				For the web integration it will be done using the REST architecture. In the REST architecture ecerything is treated as a resource. A restful service is usually highly scalable and maintainable. Resources are identified by URIs. The URI specifies an adress for the requested resource in a global adress space. Integration with the android interface will be similar as android apps communicate with http requests.
 
 			\subsubsection{Architectural constraints}
 				Client has not provided any architecture constraints.
@@ -100,20 +115,72 @@
 		\subsection{Architectural patterns or styles}
 
 		\subsection{Architectural tactics or strategies}
+			\subsubsection{Reliability}
+				Any data that is added to the system must be checked before it is stored. Any incorrect data (e.g. letters in a date) must be fixed before the form can be submitted. This ensures that the stored information is consistent.\\
+				
+				A strict format must be applied to any reporting and any generated report must follow the format. If needed data is missing, there should be stand-in messages (such as "No data available").
+			\subsubsection{Scalability}
+				In order to reduce the load of multiple users, use cases that are common (such as some reports) should be optimized.\\
+				
+				If multiple users have access to the same resources, the addition of data should be done on a first-come-first-serve basis, and the newest information should override older data.\\
+				
+				When the amount of users logged in exceeds the load capabilities of the server, the server should be able to scale up in order to handel the excess requests.
+			\subsubsection{Cost}
+				Reports could be pre-processed and cached so that the same report is not generated multiple times, saving on resources. The system should be able to produce subsets of the report at a relativly low cost (e.g. a report for all researchers under a specific research group), and re-use those subsets to make the larger reports.
+			\subsubsection{Security}
+				Strict user control must be enforced, ensuring that each step of any use case makes sure that the user has the correct authorisation. By using hashing, passwords can be stored safely in the database, with a lower risk to user information leaks. \textbf{No plaintext passwords should be stored}.
+			\subsubsection{Audibility}
+				By using multiple log files, the different kinds of actions can be individually logged (i.e. individual logs for Errors, Logins, Data changes etc.), and there should be log files for individual days (a new log for each day) so that the information is organised. Over time, old log files can be merged together for archiving purposes.
 
 		\subsection{Use of reference architectures and frameworks}
-		The system will incorporate the Ruby on Rails framework. It is easy to use this framework with front end frameworks. Ruby on Rails will be coupled with jQuery. The system will use jQuery because it is extensible and supported by most, if not all, browsers. Node.js will be used because it is a runtime environment which runs and handles all the server-side logic.
-
-		The system will make use of the Model-view-controller architecture. This architecture is ideal because the software application will be separated into three interconnected parts, which means each module can function as separate entities.
+				The system will incorporate the Ruby on Rails framework. It is easy to use this framework with front end frameworks. Ruby on Rails will be coupled with jQuery. The system will use jQuery because it is extensible and supported by most, if not all, browsers. Node.js will be used because it is a runtime environment which runs and handles all the server-side logic.\\
+				
+				The system will make use of the Model-view-controller architecture. This architecture is ideal because the software application will be separated into three interconnected parts, which means each module can function as separate entities.
 		\subsection{Access and integration channels}
 			\subsubsection{Access Channels}
 				The user will be able to access the system, provided they are logged in, via the web either with a PC or a smartphone.
 				It is important that the system has a user friendly interface, especially for mobile devices, to make it as easy to use as possible.
-				The user will also be able to use the system via an Android application if they so choose.
+				The system's access channels will involve HTML5, JavaScript for client side scripting, CSS for styling and Bootstrap for a responsive design.
+				The user will also be able to use the system via an Android application if they so choose. This will give the user the best experience when interfacing with the system 				via a smartphone.
 			\subsubsection{Integration Channels}
-				The system will integrate with external systems via a MySQL database.
+				The system will have to integrate the mobile app with the database and the website to ensure that everything works concurrently and correctly. Integration channels of the website will be html, php, javascript and css. These form part of the basic tools to intergrate any website together. NodeJS will be used as a platform on which the mobile app will be created. The system will integrate with external systems via a MongoDB database. NodeJS and MongoDB will have to be integrated together so that the mobile app works correctly and efficiently. Finally all systems as a whole will have to use the same central database and this is how the system is linked together.   
 
 		\subsection{Technologies}
+		When designing a system the consideration of technologies or platforms, that will be used, is of great importance. This section will describe the technologies that will be used for the CS report system, as well as give reasons for the choices made. The CS report system will bring together several technologies to make one working system. Since the system will include two facets, the web interface and the mobile interface, the choice of technologies is important. Regardless of the technologies chosen the system must remain must remain efficient and functional on both interfaces. The technologies that will be used include and not limited to:
+		
+		 \textbf{Database:}\par
+		 \begin{itemize}
+		\item  \textbf{MongoDB} is a cross platform document-oriented database. This database, because it is a NoSQL database. NoSQL over the traditional SQL relational database for its speed when accessing data. MongoDB also stores its data in a similar format to JSON which will go well with the other technologies to be mentioned later in the text.
+		\end{itemize}
+		
+		\textbf{Web Interface Technologies:}\par
+		\begin{itemize}
+		
+		\item \textbf{HTML5} is latest version of the standard markup language for displaying information/ webpages using the HTTP or HTTPS protocols on the web. 
+\item \textbf{CSS3 together with the Bootstrap framework} for the styling of the webpages. CSS is the standard style sheet language used with HTML. The Bootstrap framework provides preprogramed styles that can be used to our convenience.
+\item \textbf{JavaScript}, in particular the AngularJS framework for providing functionality in the webpage. JavaScript is a client-side language and will provide a way for the webpage to communicate with the database and server. AngularJS over jQuery because it provides more functionality and works well with NodeJS and MongoDB.
+\item \textbf{NodeJS} for the server-side scripting. It will communicate with the database. It is fast and works well with AngularJS and MongoDB.
+\end{itemize}
+
+\textbf{Mobile Interface Technologies:}\par
+\begin{itemize}
+\item \textbf{Java and XML} will be used for the Android application development. Java and XML are used together to make Android applications.
+\item \textbf{Gradle} is a build system. It is the default build system in Android Studio
+\end{itemize}
+\textbf{Operating Systems:}\par
+\begin{itemize}
+\item \textbf{PC Platforms} \par
+The system will run on the 3 most widely used platforms namely Linux, MacOS and Windows. It will be supported by Google Chrome, Safari and Mozilla Firefox. The server will run on a Linux platform.
+\item \textbf{Mobile Platforms} \par
+Android OS will be the focal mobile OS because of its popularity; haven said that, the system can be adapted to run on iOS and Windows Mobile as well.
+\end{itemize}
+\textbf{Other Technologies to be considered:}\par
+\begin{itemize}
+\item \textbf{Google Calendar API}. The Google calendar API can be integrated into both the web based and mobile interfaces. This will allow users to enter their schedule e.g. Due date for reports, conference dates
+\end{itemize}
+
+
+
 		
 	
 	\section{Functional Requirements and Application Design}
@@ -370,27 +437,4 @@
 		\item Specifics with regard to the DoE and UP weighted contributions
 		\item Further elaboration on how funding occurs.
 	\end{itemize}
-	
-	\section{Architectural Tactics or Strategies}
-	
-	\begin{itemize}
-		\item Scalability - It is estimated that there will be approximatly one hundred users. The system should be able to handle each user being active at the same time even though it is unlikly.
-	\end{itemize}
-		\subsection{Reliability}
-			Any data that is added to the system must be checked before it is stored. Any incorrect data (e.g. letters in a date) must be fixed before the form can be submitted. This ensures that the stored information is consistent.\\
-			
-			A strict format must be applied to any reporting and any generated report must follow the format. If needed data is missing, there should be stand-in messages (such as "No data available").
-		\subsection{Scalability}
-			In order to reduce the load of multiple users, use cases that are common (such as some reports) should be optimized.\\
-			
-			If multiple users have access to the same resources, the addition of data should be done on a first-come-first-serve basis, and the newest information should override older data.\\
-			
-			When the amount of users logged in exceeds the load capabilities of the server, the server should be able to scale up in order to handel the excess requests.
-		\subsection{Cost}
-			Reports could be pre-processed and cached so that the same report is not generated multiple times, saving on resources. The system should be able to produce subsets of the report at a relativly low cost (e.g. a report for all researchers under a specific research group), and re-use those subsets to make the larger reports.
-		\subsection{Security}
-			Strict user control must be enforced, ensuring that each step of any use case makes sure that the user has the correct authorisation. By using hashing, passwords can be stored safely in the database, with a lower risk to user information leaks. \textbf{No plaintext passwords should be stored}.
-		\subsection{Audibility}
-			By using multiple log files, the different kinds of actions can be individually logged (i.e. individual logs for Errors, Logins, Data changes etc.), and there should be log files for individual days (a new log for each day) so that the information is organised. Over time, old log files can be merged together for archiving purposes.
-
 \end{document}

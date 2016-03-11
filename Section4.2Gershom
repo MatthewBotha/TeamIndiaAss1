@@ -1,0 +1,68 @@
+%----------------------------------------------------------------------------------------
+	%	Architectural patterns or styles
+	%----------------------------------------------------------------------------------------
+
+		\subsection{Architectural patterns or styles}
+		On this section we will be describing the different patterns and styles to be used when developing the CS 		        Research System.
+		\setcounter{secnumdepth}{5}
+		\subsubsection{Client-server pattern} % level 1
+		\begin{itemize}
+		 \item Segregates the system into two applications, where the client makes requests to the server. In many 				cases, the server is a database with application logic represented as stored procedures.
+		
+
+         \item  The main reason why we chose this pattern is because sensitive and personal data pertaining to the 				name, emails and other client information must be kept secure. Client/Server architecture provides a far 			higher 	degree of security and data integrity. The nature of the CS Report System necessitates a means of 				centralised data access and a system featuring high maintainability. The Client/Server architecture ensures that changes 	made to the system are immediately visible to all clients.
+         \end{itemize}
+         \paragraph{Server} % level 2
+         \begin{itemize}
+          \item The Server handles storage of data into the database and provides data on request. The Server is responsible for all back end functions of the software including the verification 	of users for security.
+         
+           \end{itemize}
+            \paragraph{Client} % level 3
+         \begin{itemize}
+          \item The client is responsible for the front end of the CS report system. It also allows users to 	send 			queries to the server and requesting for various services offered by the server. The 	client also provides 			an interface between the system  and its users.  	
+           \end{itemize}
+           
+           \subsubsection{Authentication Enforcer pattern} % level 1
+           
+			 \begin{itemize}
+          \item  The Authentication Enforcer pattern handles the authentication logic across all of the actions 						within the Web tier. It assumes responsibility for authentication and veriï¬cation of user identity and 					delegates direct interaction with the security provider to a helper class. This applies not only to 						password-based authentication, but also to client certiï¬cate-based authentication and other 								authentication schemes that provide a userâs identity, such as Kerberos. 
+        	\item This pattern will help us improve security of the system while keeping the scalability and 						performance well maintained since the Authentication Enforcer pattern provides a consistent and structured way to handle authentication and veriï¬cation of requests across actions within Web-tier components and also 		supports MVC architecture without duplicating the code.	
+           \end{itemize}           
+           
+            \subsubsection{Dependency Injection} % level 1
+            
+             \begin{itemize}
+          \item  Dependency injection implements inversion of control for software libraries. The design pattern 					allows a client to remove all knowledge of a concrete implementation that it needs to use. This helps 					isolate the client from the impact of design changes and defects. It promotes re-usability, testability 					and maintainability
+        	\item The benefits of using Dependency Injection in our system, is that it will ensure loose coupling of 				code between the diï¬erent modules that need to be implemented. Decoupling of code will ensure that the 					code in the system are cleaner, easier to modify when required and easier to adapt and implement for reuse.	
+           \end{itemize} 
+           
+           
+           \subsubsection{Blackboard pattern} % level 1
+            
+             \begin{itemize}
+          \item  The blackboard pattern allows multiple processes to work closer together on separate threads, 						polling and reacting if needed. The CS Report System will be separated through layers. There will be User 			Interface layer, services layer and process layer which will include Business logic and data.  User	 					Interface layer will handle interaction like receiving input like login credentials from users. The 						service layer will handle services like opening a research group and deleting a research group and lastly 			process layer will process services rendered for authorization. Separation through layers will enhance 					performance, how the software reacts,  manageability and reusability.
+        	
+           \end{itemize} 
+           
+         
+           
+           \subsubsection{MVC} % level 1
+            \begin{itemize}
+          \item  Model View Controller divides the web portion of the server into three interconnected parts, so as 					to 	separate internal representations of information from the ways that information is presented to or 					accepted from the user. This ensures reusability  of code, easy to maintain code and an added maintenance 			beneï¬t as well as ensure separation of concerns, cohesion, decoupling of components and pluggability on 					the CS 	Report System.
+			\end{itemize}         	
+        	
+         
+            \paragraph{Model} % level 2
+            \begin{itemize}
+            \item The Model directly manages manages the data on the database and the overall flow of the software.
+            \end{itemize} 
+            \paragraph{View} % level 3
+              \begin{itemize}
+            \item Data can be represented and structured sufficiently using HTML.
+            \end{itemize} 
+            \paragraph{Controller} % level 4
+              \begin{itemize}
+            \item The controller will accept the input from the user and convert it into commands that 		the 					model or view can understand.
+            
+              \end{itemize} 
+         
