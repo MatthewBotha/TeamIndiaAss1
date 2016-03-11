@@ -109,9 +109,43 @@
 				It is important that the system has a user friendly interface, especially for mobile devices, to make it as easy to use as possible.
 				The user will also be able to use the system via an Android application if they so choose.
 			\subsubsection{Integration Channels}
-				The system will integrate with external systems via a MySQL database.
+				The system will have to integrate the mobile app with the database and the website to ensure that everything works concurrently and correctly. Integration channels of the website will be html, php, javascript and css. These form part of the basic tools to intergrate any website together. NodeJS will be used as a platform on which the mobile app will be created. The system will integrate with external systems via a MongoDB database. NodeJS and MongoDB will have to be integrated together so that the mobile app works correctly and efficiently. Finally all systems as a whole will have to use the same central database and this is how the system is linked together.   
 
 		\subsection{Technologies}
+		When designing a system the consideration of technologies or platforms, that will be used, is of great importance. This section will describe the technologies that will be used for the CS report system, as well as give reasons for the choices made. The CS report system will bring together several technologies to make one working system. Since the system will include two facets, the web interface and the mobile interface, the choice of technologies is important. Regardless of the technologies chosen the system must remain must remain efficient and functional on both interfaces. The technologies that will be used include and not limited to:
+		
+		 \textbf{Database:}\par
+		 \begin{itemize}
+		\item  \textbf{MongoDB} is a cross platform document-oriented database. This database, because it is a NoSQL database. NoSQL over the traditional SQL relational database for its speed when accessing data. MongoDB also stores its data in a similar format to JSON which will go well with the other technologies to be mentioned later in the text.
+		\end{itemize}
+		
+		\textbf{Web Interface Technologies:}\par
+		\begin{itemize}
+		
+		\item \textbf{HTML5} is latest version of the standard markup language for displaying information/ webpages using the HTTP or HTTPS protocols on the web. 
+\item \textbf{CSS3 together with the Bootstrap framework} for the styling of the webpages. CSS is the standard style sheet language used with HTML. The Bootstrap framework provides preprogramed styles that can be used to our convenience.
+\item \textbf{JavaScript}, in particular the AngularJS framework for providing functionality in the webpage. JavaScript is a client-side language and will provide a way for the webpage to communicate with the database and server. AngularJS over jQuery because it provides more functionality and works well with NodeJS and MongoDB.
+\item \textbf{NodeJS} for the server-side scripting. It will communicate with the database. It is fast and works well with AngularJS and MongoDB.
+\end{itemize}
+
+\textbf{Mobile Interface Technologies:}\par
+\begin{itemize}
+\item \textbf{Java and XML} will be used for the Android application development. Java and XML are used together to make Android applications.
+\item \textbf{Gradle} is a build system. It is the default build system in Android Studio
+\end{itemize}
+\textbf{Operating Systems:}\par
+\begin{itemize}
+\item \textbf{PC Platforms} \par
+The system will run on the 3 most widely used platforms namely Linux, MacOS and Windows. It will be supported by Google Chrome, Safari and Mozilla Firefox. The server will run on a Linux platform.
+\item \textbf{Mobile Platforms} \par
+Android OS will be the focal mobile OS because of its popularity; haven said that, the system can be adapted to run on iOS and Windows Mobile as well.
+\end{itemize}
+\textbf{Other Technologies to be considered:}\par
+\begin{itemize}
+\item \textbf{Google Calendar API}. The Google calendar API can be integrated into both the web based and mobile interfaces. This will allow users to enter their schedule e.g. Due date for reports, conference dates
+\end{itemize}
+
+
 		
 	
 	\section{Functional Requirements and Application Design}
