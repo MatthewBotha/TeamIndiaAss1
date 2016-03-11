@@ -115,11 +115,27 @@
 		\subsection{Architectural patterns or styles}
 
 		\subsection{Architectural tactics or strategies}
+			\subsubsection{Reliability}
+				Any data that is added to the system must be checked before it is stored. Any incorrect data (e.g. letters in a date) must be fixed before the form can be submitted. This ensures that the stored information is consistent.\\
+				
+				A strict format must be applied to any reporting and any generated report must follow the format. If needed data is missing, there should be stand-in messages (such as "No data available").
+			\subsubsection{Scalability}
+				In order to reduce the load of multiple users, use cases that are common (such as some reports) should be optimized.\\
+				
+				If multiple users have access to the same resources, the addition of data should be done on a first-come-first-serve basis, and the newest information should override older data.\\
+				
+				When the amount of users logged in exceeds the load capabilities of the server, the server should be able to scale up in order to handel the excess requests.
+			\subsubsection{Cost}
+				Reports could be pre-processed and cached so that the same report is not generated multiple times, saving on resources. The system should be able to produce subsets of the report at a relativly low cost (e.g. a report for all researchers under a specific research group), and re-use those subsets to make the larger reports.
+			\subsubsection{Security}
+				Strict user control must be enforced, ensuring that each step of any use case makes sure that the user has the correct authorisation. By using hashing, passwords can be stored safely in the database, with a lower risk to user information leaks. \textbf{No plaintext passwords should be stored}.
+			\subsubsection{Audibility}
+				By using multiple log files, the different kinds of actions can be individually logged (i.e. individual logs for Errors, Logins, Data changes etc.), and there should be log files for individual days (a new log for each day) so that the information is organised. Over time, old log files can be merged together for archiving purposes.
 
 		\subsection{Use of reference architectures and frameworks}
-				The system will incorporate the Ruby on Rails framework. It is easy to use this framework with front end frameworks. Ruby on Rails will be coupled with jQuery. The system will use jQuery because it is extensible and supported by most, if not all, browsers. Node.js will be used because it is a runtime environment which runs and handles all the server-side logic.
-
-		The system will make use of the Model-view-controller architecture. This architecture is ideal because the software application will be separated into three interconnected parts, which means each module can function as separate entities.
+				The system will incorporate the Ruby on Rails framework. It is easy to use this framework with front end frameworks. Ruby on Rails will be coupled with jQuery. The system will use jQuery because it is extensible and supported by most, if not all, browsers. Node.js will be used because it is a runtime environment which runs and handles all the server-side logic.\\
+				
+				The system will make use of the Model-view-controller architecture. This architecture is ideal because the software application will be separated into three interconnected parts, which means each module can function as separate entities.
 		\subsection{Access and integration channels}
 			\subsubsection{Access Channels}
 				The user will be able to access the system, provided they are logged in, via the web either with a PC or a smartphone.
@@ -421,27 +437,4 @@ Android OS will be the focal mobile OS because of its popularity; haven said tha
 		\item Specifics with regard to the DoE and UP weighted contributions
 		\item Further elaboration on how funding occurs.
 	\end{itemize}
-	
-	\section{Architectural Tactics or Strategies}
-	
-	\begin{itemize}
-		\item Scalability - It is estimated that there will be approximatly one hundred users. The system should be able to handle each user being active at the same time even though it is unlikly.
-	\end{itemize}
-		\subsection{Reliability}
-			Any data that is added to the system must be checked before it is stored. Any incorrect data (e.g. letters in a date) must be fixed before the form can be submitted. This ensures that the stored information is consistent.\\
-			
-			A strict format must be applied to any reporting and any generated report must follow the format. If needed data is missing, there should be stand-in messages (such as "No data available").
-		\subsection{Scalability}
-			In order to reduce the load of multiple users, use cases that are common (such as some reports) should be optimized.\\
-			
-			If multiple users have access to the same resources, the addition of data should be done on a first-come-first-serve basis, and the newest information should override older data.\\
-			
-			When the amount of users logged in exceeds the load capabilities of the server, the server should be able to scale up in order to handel the excess requests.
-		\subsection{Cost}
-			Reports could be pre-processed and cached so that the same report is not generated multiple times, saving on resources. The system should be able to produce subsets of the report at a relativly low cost (e.g. a report for all researchers under a specific research group), and re-use those subsets to make the larger reports.
-		\subsection{Security}
-			Strict user control must be enforced, ensuring that each step of any use case makes sure that the user has the correct authorisation. By using hashing, passwords can be stored safely in the database, with a lower risk to user information leaks. \textbf{No plaintext passwords should be stored}.
-		\subsection{Audibility}
-			By using multiple log files, the different kinds of actions can be individually logged (i.e. individual logs for Errors, Logins, Data changes etc.), and there should be log files for individual days (a new log for each day) so that the information is organised. Over time, old log files can be merged together for archiving purposes.
-
 \end{document}
